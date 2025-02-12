@@ -1,0 +1,408 @@
+html {
+    scroll-behavior: smooth;
+    scroll-margin-top: 100px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Steph', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar {
+    background-color:
+        rgba(207, 134, 141, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+    padding-left: 50px;
+    backdrop-filter: blur(3px);
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 22px !important;
+    font-weight: bold;
+    color: rgb(168, 80, 89);
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.navlinks {
+    display: flex;
+    position: absolute;
+    right: 60px;
+    gap: 20px;
+    padding-right: 50px;
+}
+
+.navlinks a {
+    font-size: 16px !important;
+}
+
+/* ABOUT ME STARTS */
+
+.about-me {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(168, 80, 89, 0.1);
+}
+
+.about-me h2 {
+    margin-top: 50px;
+    color: rgb(168, 80, 89);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-me h2:hover {
+    transform: scale(1.2);
+}
+
+.about-me img {
+    margin: 20px;
+    width: 250px;
+    height: auto;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+
+.about-me p {
+    font-size: 17px;
+    width: 750px;
+    text-align: center;
+}
+
+.about-me .icons i {
+    font-size: 35px;
+    margin-left: 20px;
+    color: rgba(207, 134, 141);
+    padding-top: 10px;
+    padding-bottom: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-me .icons i:hover {
+    transform: scale(1.2);
+}
+
+
+.about-me .icons i:hover {
+    color: rgb(168, 80, 89);
+}
+
+
+/* EDUCATION SECTION STARTS */
+.education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.education h2 {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    color: rgb(168, 80, 89);
+}
+
+
+.education i {
+    color: rgba(207, 134, 141);
+}
+
+.cards {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: auto;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card1,
+.card2 {
+    width: 400px;
+    height: 170px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(168, 80, 89, 0.1);
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card1 p,
+.card2 p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card2 p {
+    margin-bottom: 0px;
+}
+
+.cards i {
+    font-size: 30px;
+}
+
+.card1:hover {
+    margin-right: 20px;
+    transform: scale(1.1);
+}
+
+.card2:hover {
+    margin-left: 20px;
+    transform: scale(1.1);
+}
+
+/* TECHNICAL SKILLS SECTION STARTS */
+
+.technical-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(168, 80, 89, 0.1);
+    padding-bottom: 100px;
+}
+
+.technical-skills h2 {
+    color: rgb(168, 80, 89);
+    margin-top: 70px;
+    margin-bottom: 0px;
+}
+
+.technical-skills .ico {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 70px;
+}
+
+
+.technical-skills .ico i {
+    font-size: 50px !important;
+    color: rgba(207, 134, 141) !important;
+    padding-left: 10px !important;
+    transition: transform 0.3s ease-in-out !important;
+}
+
+.technical-skills .ico i:hover {
+    color: rgb(168, 80, 89) !important;
+    transform: scale(1.2) !important;
+}
+
+/* PROJECT SECTION STARTS */
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.projects h2 {
+    color: rgb(168, 80, 89);
+}
+
+.proj-card-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+    display: block;
+    color:black;
+}
+
+.proj-card {
+    margin-top: 40px;
+    width: 400px;
+    height: 170px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(168, 80, 89, 0.1);
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.proj-card:hover {
+    transform: scale(1.1);
+}
+
+.proj-card a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.proj-card i {
+    color: rgba(207, 134, 141);
+    padding-left: 10px;
+}
+
+/* FEEDBACK SECTION STARTS */
+
+.feedbacks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.feedbacks h2 {
+    color: rgb(168, 80, 89);
+    margin-top: 50px;
+}
+
+.feedbacks p {
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+    background-color: rgba(207, 134, 141);
+    color: rgb(103, 39, 46);
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 800px) {
+    .navbar {
+        width: 100%;
+        padding: 8px;
+        padding-left: 10px;
+    }
+
+    .navbar a {
+        font-size: 14px !important;
+    }
+
+    .navlinks {
+        position: absolute;
+        display: flex;
+        right: 10px;
+        padding-right: 20px;
+        gap: 5px;
+
+    }
+
+    .navlinks a {
+        font-size: 12px !important;
+        padding: 3px;
+    }
+
+    /* ABOUT ME STARTS */
+
+    .about-me {
+        width: 100%;
+    }
+
+    .about-me img {
+        width: 200px;
+        height: auto;
+    }
+
+
+    .about-me p {
+        font-size: 15px;
+        width: 350px;
+        text-align: center;
+    }
+
+    .about-me .icons i {
+        font-size: 30px;
+    }
+
+
+    /* EDUCATION STARTS */
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .card1,
+    .card2 {
+        width: 300px;
+        height: 170px;
+    }
+
+    .card1:hover {
+        margin-bottom: 10px;
+    }
+
+    .card2:hover {
+        margin-top: 10px;
+    }
+
+    /* TECHNICAL SKILLS START */
+
+    .technical-skills {
+        width: 100%;
+    }
+
+    .technical-skills .ico i {
+        font-size: 30px !important;
+    }
+
+    /* PROJECT SECTION STARTS */
+    .projects {
+        width: 100%;
+    }
+
+    .proj-card {
+        width: 300px;
+        height: 170px;
+    }
+
+    /* FEEDBACK SECTION STARTS */
+
+    .feedbacks {
+        width: 100%;
+    }
+
+    .feedbacks p {
+        font-size: 13px;
+    }
+
+    footer {
+        width:100%;
+        font-size: 12px;
+    }
+}
